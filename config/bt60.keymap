@@ -29,8 +29,8 @@
         raise {
             bindings = <
 &trans    &kp F1  &kp F2     &kp F3    &kp F4     &kp F5    &kp F6  &kp F7      &kp F8    &kp F9     &kp F10  &kp F11  &kp F12  &kp DEL
-&mkp MB1  &trans  &kp PG_UP  &mkp MB3  &trans     &trans    &trans  &kp PG_UP   &kp UP    &kp PG_UP  &trans   &trans   &trans   &trans
-&mkp MB3  &trans  &kp PG_DN  &mkp MB2  &mkp MB1   &mkp MB2  &trans  &kp LEFT    &kp DOWN  &kp RIGHT  &trans   &trans   &trans
+&mkp MB3  &trans  &kp PG_UP  &mkp MB3  &trans     &trans    &trans  &kp PG_UP   &kp UP    &kp PG_UP  &trans   &trans   &trans   &trans
+&mkp MB1  &trans  &kp PG_DN  &mkp MB2  &mkp MB1   &mkp MB2  &trans  &kp LEFT    &kp DOWN  &kp RIGHT  &trans   &trans   &trans
 &trans    &trans  &trans     &mkp MB4  &mkp MB5   &trans    &trans  &kp HOME    &trans    &kp END    &kp UP   &trans   &trans
           &trans  &trans     &mkp MB2  &kp PSCRN  &trans    &trans  &sys_reset  &trans
             >;
@@ -48,10 +48,10 @@
 
         device {
             bindings = <
-&kp K_POWER  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans       &trans
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans       &trans
-&trans       &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans
-&trans       &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_TOG  &bootloader
+&kp K_POWER  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans       &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans       &trans
+&trans       &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans
+&trans       &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &bootloader
              &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
             >;
         };
