@@ -29,11 +29,11 @@
 
         raise {
             bindings = <
-&trans      &kp F1        &kp F2        &kp F3    &kp F4    &kp F5      &kp F6  &kp F7      &kp F8      &kp F9     &kp F10    &kp F11     &kp F12          &kp DEL
-&trans      &trans        &mkp MB6      &mkp MB3  &trans    &trans      &trans  &kp PG_UP   &kp UP      &kp PG_UP  &kp PSCRN  &kp SLCK    &kp PAUSE_BREAK  &rgb_ug RGB_TOG
-&kp CAPS    &kp LEFT      &kp DOWN      &mkp MB2  &mkp MB1  &mkp MB2    &trans  &kp LEFT    &kp DOWN    &kp RIGHT  &kp HOME   &kp PG_UP   &bootloader
-&kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &mkp MB4  &mkp MB5  &bl BL_DEC  &trans  &kp HOME    &trans      &kp END    &kp UP     &bl BL_TOG  &trans
-            &bt BT_PRV    &bt BT_NXT    &trans    &trans    &trans      &trans  &sys_reset  &bt BT_CLR
+&trans      &kp F1    &kp F2        &kp F3    &kp F4     &kp F5      &kp F6  &kp F7      &kp F8    &kp F9     &kp F10    &kp F11    &kp F12          &kp DEL
+&trans      &trans    &kp PG_UP     &mkp MB3  &trans     &trans      &trans  &kp PG_UP   &kp UP    &kp PG_UP  &kp PSCRN  &kp SLCK   &kp PAUSE_BREAK  &rgb_ug RGB_TOG
+&kp CAPS    &kp LEFT  &kp PG_DN     &mkp MB2  &mkp MB1   &mkp MB2    &trans  &kp LEFT    &kp DOWN  &kp RIGHT  &kp HOME   &kp PG_UP  &bootloader
+&kp C_PREV  &trans    &kp C_VOL_UP  &mkp MB4  &mkp MB5   &bl BL_DEC  &trans  &kp HOME    &trans    &kp END    &kp UP     &trans     &trans
+            &trans    &trans        &trans    &kp PSCRN  &trans      &trans  &sys_reset  &trans
             >;
         };
 
