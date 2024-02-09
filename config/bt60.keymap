@@ -5,6 +5,36 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        macro_00: macro_00 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0>;
+            label = "MACRO_00";
+        };
+
+        macro_000: macro_000 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0 &kp N0>;
+            label = "MACRO_000";
+        };
+
+        macro_0000: macro_0000 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0 &kp N0 &kp N0>;
+            label = "MACRO_0000";
+        };
+
+        macro_terminal: terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LALT &kp Q>;
+            label = "TERMINAL";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -30,19 +60,19 @@
             bindings = <
 &trans    &kp F1  &kp F2     &kp F3    &kp F4     &kp F5    &kp F6  &kp F7      &kp F8    &kp F9     &kp F10  &kp F11  &kp F12  &kp DEL
 &mkp MB3  &trans  &kp PG_UP  &mkp MB3  &trans     &trans    &trans  &kp PG_UP   &kp UP    &kp PG_UP  &trans   &trans   &trans   &trans
-&mkp MB1  &trans  &kp PG_DN  &mkp MB2  &mkp MB1   &mkp MB2  &trans  &kp LEFT    &kp DOWN  &kp RIGHT  &trans   &trans   &trans
+&trans    &trans  &kp PG_DN  &mkp MB2  &mkp MB1   &mkp MB2  &trans  &kp LEFT    &kp DOWN  &kp RIGHT  &trans   &trans   &trans
 &trans    &trans  &trans     &mkp MB4  &mkp MB5   &trans    &trans  &kp HOME    &trans    &kp END    &kp UP   &trans   &trans
-          &trans  &trans     &mkp MB2  &kp PSCRN  &trans    &trans  &sys_reset  &trans
+          &trans  &trans     &trans    &kp PSCRN  &trans    &trans  &sys_reset  &trans
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans    &trans  &trans  &trans  &trans   &trans  &trans  &kp SLASH  &kp ASTERISK  &trans     &trans  &trans  &trans
-&trans  &mkp MB1  &trans  &trans  &trans  &trans   &trans  &kp N7  &kp N8     &kp N9        &kp MINUS  &trans  &trans  &kp KP_NUMLOCK
-&trans  &trans    &trans  &trans  &trans  &trans   &trans  &kp N4  &kp N5     &kp N6        &kp PLUS   &trans  &trans
-&trans  &trans    &trans  &trans  &trans  &trans   &trans  &kp N1  &kp N2     &kp N3        &kp DOT    &trans  &trans
-        &trans    &trans  &trans  &kp N0  &kp DOT  &trans  &trans  &trans
+&trans  &trans           &trans    &trans    &trans  &trans   &trans       &trans  &kp KP_NUMLOCK  &kp SLASH  &kp ASTRK  &trans  &trans  &trans
+&trans  &macro_terminal  &mkp MB3  &mkp MB2  &trans  &trans   &macro_0000  &kp N7  &kp N8          &kp N9     &kp MINUS  &trans  &trans  &kp KP_NUMLOCK
+&trans  &trans           &trans    &trans    &trans  &trans   &macro_000   &kp N4  &kp N5          &kp N6     &kp PLUS   &trans  &trans
+&trans  &trans           &trans    &trans    &trans  &trans   &macro_00    &kp N1  &kp N2          &kp N3     &kp DOT    &trans  &trans
+        &trans           &trans    &trans    &kp N0  &kp DOT  &trans       &trans  &trans
             >;
         };
 
