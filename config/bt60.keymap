@@ -30,7 +30,14 @@
         macro_terminal: terminal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LALT &kp Q>;
+            bindings =
+                <&kp LCTRL &kp LALT>,
+                <&macro_press>,
+                <&kp Q>,
+                <&macro_tap>,
+                <&kp LCTRL &kp LALT>,
+                <&macro_release>;
+
             label = "TERMINAL";
         };
     };
@@ -68,11 +75,11 @@
 
         numbers {
             bindings = <
-&trans  &trans           &trans    &trans    &trans  &trans   &trans       &trans  &kp KP_NUMLOCK  &kp SLASH  &kp ASTRK  &trans  &trans  &trans
-&trans  &macro_terminal  &mkp MB3  &mkp MB2  &trans  &trans   &macro_0000  &kp N7  &kp N8          &kp N9     &kp MINUS  &trans  &trans  &kp KP_NUMLOCK
-&trans  &trans           &trans    &trans    &trans  &trans   &macro_000   &kp N4  &kp N5          &kp N6     &kp PLUS   &trans  &trans
-&trans  &trans           &trans    &trans    &trans  &trans   &macro_00    &kp N1  &kp N2          &kp N3     &kp DOT    &trans  &trans
-        &trans           &trans    &trans    &kp N0  &kp DOT  &trans       &trans  &trans
+&trans  &trans           &trans    &trans    &trans  &trans           &trans       &trans  &kp KP_NUMLOCK  &kp SLASH  &kp ASTRK  &trans  &trans  &trans
+&trans  &macro_terminal  &mkp MB3  &mkp MB2  &trans  &macro_terminal  &macro_0000  &kp N7  &kp N8          &kp N9     &kp MINUS  &trans  &trans  &kp KP_NUMLOCK
+&trans  &trans           &trans    &trans    &trans  &trans           &macro_000   &kp N4  &kp N5          &kp N6     &kp PLUS   &trans  &trans
+&trans  &trans           &trans    &trans    &trans  &trans           &macro_00    &kp N1  &kp N2          &kp N3     &kp DOT    &trans  &trans
+        &trans           &trans    &trans    &kp N0  &kp DOT          &trans       &trans  &trans
             >;
         };
 
