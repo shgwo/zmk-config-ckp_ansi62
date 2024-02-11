@@ -55,11 +55,11 @@
             // ------------------------------------------------------------------------------------------
 
             bindings = <
-&kp TILDE  &kp N1     &kp N2    &kp N3    &kp N4       &kp N5              &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &kp MINUS  &kp EQUAL    &kp BSPC
-&lt 2 TAB  &kp Q      &kp W     &kp E     &kp R        &kp T               &kp Y     &kp U      &kp I      &kp O    &kp P     &kp LBKT   &kp RBKT     &lt 0 BACKSLASH
+&kp GRAVE  &kp N1     &kp N2    &kp N3    &kp N4       &kp N5              &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &kp MINUS  &kp EQUAL    &kp BSPC
+&lt 2 TAB  &kp Q      &kp W     &kp E     &kp R        &kp T               &kp Y     &kp U      &kp I      &kp O    &kp P     &kp LBKT   &kp RBKT     &lt 3 BACKSLASH
 &kp LCTRL  &kp A      &kp S     &kp D     &kp F        &kp G               &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp SQT    &kp RET
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V        &kp B               &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT  &lt 3 PSCRN
-           &lt 3 ESC  &kp LGUI  &kp LALT  &lt 3 SPACE  &mt RIGHT_ALT LEFT  &kp DOWN  &kp RIGHT  &lt 3 UP
+           &lt 1 ESC  &kp LGUI  &kp LALT  &lt 1 SPACE  &mt RIGHT_ALT LEFT  &kp DOWN  &kp RIGHT  &lt 1 UP
             >;
         };
 
@@ -85,11 +85,11 @@
 
         device {
             bindings = <
-&kp K_POWER    &trans         &trans         &trans         &trans         &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans       &trans
-&bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans       &trans
-&bt BT_CLR_ALL &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans  &trans  &trans  &trans  &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans
-&trans         &trans         &trans         &trans         &trans         &trans  &trans  &trans  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &bootloader
-               &trans         &trans         &trans         &trans         &trans  &trans  &trans  &trans
+&kp K_POWER     &trans         &trans         &trans         &trans         &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans       &trans
+&bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans       &trans
+&bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans  &trans  &trans  &trans  &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans
+&trans          &trans         &trans         &trans         &trans         &trans  &trans  &trans  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &bootloader
+                &trans         &trans         &trans         &trans         &trans  &trans  &trans  &trans
             >;
         };
     };
