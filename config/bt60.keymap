@@ -65,11 +65,11 @@
 
         raise {
             bindings = <
-&trans    &kp F1  &kp F2     &kp F3    &kp F4     &kp F5    &kp F6  &kp F7      &kp F8    &kp F9     &kp F10  &kp F11  &kp F12  &kp DEL
-&mkp MB3  &trans  &kp PG_UP  &mkp MB3  &trans     &trans    &trans  &kp PG_UP   &kp UP    &kp PG_UP  &trans   &trans   &trans   &trans
-&trans    &trans  &kp PG_DN  &mkp MB2  &mkp MB1   &mkp MB2  &trans  &kp LEFT    &kp DOWN  &kp RIGHT  &trans   &trans   &trans
-&trans    &trans  &trans     &mkp MB4  &mkp MB5   &trans    &trans  &kp HOME    &trans    &kp END    &kp UP   &trans   &trans
-          &trans  &trans     &trans    &kp PSCRN  &trans    &trans  &sys_reset  &trans
+&trans    &kp F1  &kp F2     &kp F3    &kp F4     &kp F5    &kp F6  &kp F7     &kp F8    &kp F9     &kp F10  &kp F11  &kp F12  &kp DEL
+&mkp MB3  &trans  &kp PG_UP  &mkp MB3  &trans     &trans    &trans  &kp PG_UP  &kp UP    &kp PG_UP  &trans   &trans   &trans   &trans
+&trans    &trans  &kp PG_DN  &mkp MB2  &mkp MB1   &mkp MB2  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans   &trans   &trans
+&trans    &trans  &trans     &mkp MB4  &mkp MB5   &trans    &trans  &kp HOME   &trans    &kp END    &kp UP   &trans   &trans
+          &trans  &trans     &trans    &kp PSCRN  &trans    &trans  &trans     &trans
             >;
         };
 
