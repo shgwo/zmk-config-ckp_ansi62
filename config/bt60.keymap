@@ -85,11 +85,11 @@
 
         device {
             bindings = <
-&kp K_POWER     &trans         &trans         &trans         &trans         &trans  &trans  &trans           &trans           &trans           &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans
-&bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans  &trans  &trans           &trans           &trans           &trans           &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans
-&bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans  &trans  &trans           &trans           &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans
-&trans          &trans         &trans         &trans         &trans         &trans  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &bootloader
-                &trans         &trans         &trans         &trans         &trans  &trans  &trans           &sys_reset
+&kp K_POWER     &trans         &trans         &trans         &trans         &rgb_ug RGB_COLOR_HSB(65,100,32)  &rgb_ug RGB_COLOR_HSB(308,100,35)  &rgb_ug RGB_COLOR_HSB(265,100,40)  &rgb_ug RGB_COLOR_HSB(175,100,30)  &rgb_ug RGB_COLOR_HSB(40,100,32)  &rgb_ug RGB_COLOR_HSB(96,100,23)  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans
+&bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans                            &trans                             &trans                             &trans                             &trans                            &trans                            &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans
+&bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans                            &trans                             &trans                             &trans                             &trans                            &rgb_ug RGB_SPD                   &rgb_ug RGB_SPI  &trans
+&trans          &trans         &trans         &trans         &trans         &trans                            &trans                             &rgb_ug RGB_SAD                    &rgb_ug RGB_SAI                    &rgb_ug RGB_BRD                   &rgb_ug RGB_BRI                   &rgb_ug RGB_TOG  &bootloader
+                &trans         &trans         &trans         &trans         &trans                            &trans                             &trans                             &sys_reset
             >;
         };
     };
