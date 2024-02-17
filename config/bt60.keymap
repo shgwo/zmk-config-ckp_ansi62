@@ -66,7 +66,7 @@
         raise {
             bindings = <
 &trans    &kp F1  &kp F2     &kp F3    &kp F4     &kp F5    &kp F6  &kp F7     &kp F8    &kp F9     &kp F10  &kp F11  &kp F12  &kp DEL
-&mkp MB3  &trans  &kp PG_UP  &mkp MB3  &trans     &trans    &trans  &kp PG_UP  &kp UP    &kp PG_UP  &trans   &trans   &trans   &trans
+&mkp MB3  &trans  &kp PG_UP  &mkp MB3  &trans     &trans    &trans  &kp PG_UP  &kp UP    &kp PG_DN  &trans   &trans   &trans   &trans
 &trans    &trans  &kp PG_DN  &mkp MB2  &mkp MB1   &mkp MB2  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans   &trans   &trans
 &trans    &trans  &trans     &mkp MB4  &mkp MB5   &trans    &trans  &kp HOME   &trans    &kp END    &kp UP   &trans   &trans
           &trans  &trans     &trans    &kp PSCRN  &trans    &trans  &trans     &trans
@@ -75,21 +75,21 @@
 
         numbers {
             bindings = <
-&trans  &trans           &trans     &trans    &trans     &trans           &trans       &trans  &kp KP_NUMLOCK  &kp SLASH  &kp ASTRK  &trans  &trans  &trans
-&trans  &macro_terminal  &kp PG_UP  &kp UP    &kp PG_DN  &macro_terminal  &macro_0000  &kp N7  &kp N8          &kp N9     &kp MINUS  &trans  &trans  &kp KP_NUMLOCK
-&trans  &trans           &kp LEFT   &kp DOWN  &kp RIGHT  &trans           &macro_000   &kp N4  &kp N5          &kp N6     &kp PLUS   &trans  &trans
-&trans  &trans           &kp HOME   &trans    &kp END    &trans           &macro_00    &kp N1  &kp N2          &kp N3     &kp DOT    &trans  &trans
-        &trans           &trans     &trans    &kp N0     &kp DOT          &trans       &trans  &trans
+&trans  &trans           &trans     &trans    &trans     &trans           &trans       &kp KP_NUMLOCK  &trans  &kp SLASH  &kp ASTRK  &kp BACKSPACE  &trans  &trans
+&trans  &macro_terminal  &kp PG_UP  &kp UP    &kp PG_DN  &macro_terminal  &macro_0000  &kp N7          &kp N8  &kp N9     &kp MINUS  &trans         &trans  &kp KP_NUMLOCK
+&trans  &trans           &kp LEFT   &kp DOWN  &kp RIGHT  &trans           &macro_000   &kp N4          &kp N5  &kp N6     &kp PLUS   &trans         &trans
+&trans  &trans           &kp HOME   &trans    &kp END    &trans           &macro_00    &kp N1          &kp N2  &kp N3     &kp DOT    &trans         &trans
+        &trans           &trans     &trans    &kp N0     &kp DOT          &trans       &trans          &trans
             >;
         };
 
         device {
             bindings = <
-&kp K_POWER     &trans         &trans         &trans         &trans         &rgb_ug RGB_COLOR_HSB(65,100,32)  &rgb_ug RGB_COLOR_HSB(308,100,35)  &rgb_ug RGB_COLOR_HSB(265,100,40)  &rgb_ug RGB_COLOR_HSB(175,100,30)  &rgb_ug RGB_COLOR_HSB(40,100,32)  &rgb_ug RGB_COLOR_HSB(96,100,23)  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans
-&bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans                            &trans                             &trans                             &trans                             &trans                            &trans                            &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans
-&bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans                            &trans                             &trans                             &trans                             &trans                            &rgb_ug RGB_SPD                   &rgb_ug RGB_SPI  &trans
-&trans          &trans         &trans         &trans         &trans         &trans                            &trans                             &rgb_ug RGB_SAD                    &rgb_ug RGB_SAI                    &rgb_ug RGB_BRD                   &rgb_ug RGB_BRI                   &rgb_ug RGB_TOG  &bootloader
-                &trans         &trans         &trans         &trans         &trans                            &trans                             &trans                             &sys_reset
+&kp K_POWER     &kp C_BRI_DEC                     &kp C_BRI_INC                     &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AL_WWW                      &kp C_AL_EMAIL                     &kp C_AL_MUSIC                     &kp C_PREV                         &kp C_PLAY_PAUSE                   &kp C_NEXT                         &kp C_MUTE                         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&bt BT_CLR      &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2                       &bt BT_SEL 3                      &trans                             &trans                             &trans                             &trans                             &rgb_ug RGB_SPD                    &rgb_ug RGB_SPI                    &rgb_ug RGB_EFR    &rgb_ug RGB_EFF  &trans
+&bt BT_CLR_ALL  &bt BT_DISC 0                     &bt BT_DISC 1                     &bt BT_DISC 2                      &bt BT_DISC 3                     &trans                             &trans                             &trans                             &rgb_ug RGB_BRD                    &rgb_ug RGB_BRI                    &rgb_ug RGB_HUD                    &rgb_ug RGB_HUI    &trans
+&trans          &rgb_ug RGB_COLOR_HSB(33,100,34)  &rgb_ug RGB_COLOR_HSB(38,100,38)  &rgb_ug RGB_COLOR_HSB(65,100,28)   &rgb_ug RGB_COLOR_HSB(90,100,31)  &rgb_ug RGB_COLOR_HSB(128,100,31)  &rgb_ug RGB_COLOR_HSB(166,100,29)  &rgb_ug RGB_COLOR_HSB(204,100,30)  &rgb_ug RGB_COLOR_HSB(267,100,27)  &rgb_ug RGB_COLOR_HSB(278,100,30)  &rgb_ug RGB_COLOR_HSB(312,100,28)  &rgb_ug RGB_TOG    &bootloader
+                &trans                            &trans                            &trans                             &trans                            &trans                             &trans                             &trans                             &sys_reset
             >;
         };
     };
