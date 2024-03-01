@@ -40,7 +40,7 @@ CONFIG_ZMK_RGB_UNDERGLOW_EFF_START=1
 ## add user pref (idle)
 #CONFIG_ZMK_IDLE_TIMEOUT=30000  ## miliseconds (default)
 CONFIG_ZMK_SLEEP=y
-CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=600000
+CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=1800000
 # Use the STRIP config specific to the LEDs you're using
 CONFIG_WS2812_STRIP=y
 ## mod: commented (for battery life test)
