@@ -55,21 +55,21 @@
             // ------------------------------------------------------------------------------------------
 
             bindings = <
-&kp GRAVE  &kp N1     &kp N2    &kp N3    &kp N4       &kp N5              &kp N6    &kp N7    &kp N8       &kp N9   &kp N0    &kp MINUS  &kp EQUAL  &kp BSPC
-&lt 2 TAB  &kp Q      &kp W     &kp E     &kp R        &kp T               &kp Y     &kp U     &kp I        &kp O    &kp P     &kp LBKT   &kp RBKT   &lt 3 BACKSLASH
-&kp LCTRL  &kp A      &kp S     &kp D     &kp F        &kp G               &kp H     &kp J     &kp K        &kp L    &kp SEMI  &kp SQT    &kp RET
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V        &kp B               &kp N     &kp M     &kp COMMA    &kp DOT  &kp FSLH  &kp RSHFT  &lt 2 UP
-           &lt 1 ESC  &kp LGUI  &kp LALT  &lt 1 SPACE  &mt RIGHT_ALT LEFT  &kp LEFT  &kp DOWN  &lt 1 RIGHT
+&kp GRAVE  &kp N1     &kp N2    &kp N3    &kp N4       &kp N5                     &kp N6    &kp N7    &kp N8       &kp N9   &kp N0    &kp MINUS  &kp EQUAL  &kp BSPC
+&lt 2 TAB  &kp Q      &kp W     &kp E     &kp R        &kp T                      &kp Y     &kp U     &kp I        &kp O    &kp P     &kp LBKT   &kp RBKT   &lt 3 BACKSLASH
+&kp LCTRL  &kp A      &kp S     &kp D     &kp F        &kp G                      &kp H     &kp J     &kp K        &kp L    &kp SEMI  &kp SQT    &kp RET
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V        &kp B                      &kp N     &kp M     &kp COMMA    &kp DOT  &kp FSLH  &kp RSHFT  &lt 2 UP
+           &lt 1 ESC  &kp LGUI  &kp LALT  &lt 1 SPACE  &mt RIGHT_ALT PRINTSCREEN  &kp LEFT  &kp DOWN  &lt 1 RIGHT
             >;
         };
 
         raise {
             bindings = <
-&trans    &kp F1  &kp F2     &kp F3    &kp F4     &kp F5    &kp F6  &kp F7     &kp F8    &kp F9     &kp F10  &kp F11  &kp F12  &kp DEL
-&mkp MB3  &trans  &kp PG_UP  &mkp MB3  &trans     &trans    &trans  &kp PG_UP  &kp UP    &kp PG_DN  &trans   &trans   &trans   &trans
-&trans    &trans  &kp PG_DN  &mkp MB2  &mkp MB1   &mkp MB2  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans   &trans   &trans
-&trans    &trans  &trans     &mkp MB4  &mkp MB5   &trans    &trans  &kp HOME   &trans    &kp END    &kp UP   &trans   &trans
-          &trans  &trans     &trans    &kp PSCRN  &trans    &trans  &trans     &trans
+&trans  &kp F1  &kp F2     &kp F3     &kp F4          &kp F5    &kp F6  &kp F7     &kp F8    &kp F9     &kp F10  &kp F11  &kp F12  &kp DEL
+&trans  &trans  &kp PG_UP  &mkp MB3   &trans          &trans    &trans  &kp PG_UP  &kp UP    &kp PG_DN  &trans   &trans   &trans   &trans
+&trans  &trans  &kp PG_DN  &mkp MB2   &mkp MB1        &mkp MB2  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans   &trans   &trans
+&trans  &trans  &trans     &mkp MB4   &mkp MB5        &trans    &trans  &kp HOME   &trans    &kp END    &kp UP   &trans   &trans
+        &trans  &trans     &kp LCTRL  &kp LEFT_SHIFT  &trans    &trans  &trans     &trans
             >;
         };
 
